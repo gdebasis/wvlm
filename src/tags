@@ -1,0 +1,171 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+CombinationSimilarity	tsm/WordVecSearcher.java	/^    public CombinationSimilarity(Properties prop) {$/;"	m	class:CombinationSimilarity
+CombinationSimilarity	tsm/WordVecSearcher.java	/^class CombinationSimilarity extends PerFieldSimilarityWrapper {$/;"	c
+FIELD_BAG_OF_WORDS	tsm/WordVecIndexer.java	/^    static final public String FIELD_BAG_OF_WORDS = "words";  \/\/ Baseline$/;"	f	class:WordVecIndexer
+FIELD_ID	tsm/WordVecIndexer.java	/^    static final public String FIELD_ID = "id";$/;"	f	class:WordVecIndexer
+FIELD_P_WVEC_C	tsm/WordVecIndexer.java	/^    static final public String FIELD_P_WVEC_C = "wv_c";$/;"	f	class:WordVecIndexer
+FIELD_P_WVEC_D	tsm/WordVecIndexer.java	/^    static final public String FIELD_P_WVEC_D = "wv_d";$/;"	f	class:WordVecIndexer
+FIELD_TIME	tsm/WordVecIndexer.java	/^    static final public String FIELD_TIME = "time";$/;"	f	class:WordVecIndexer
+GeneralizedLMSimilarity	tsm/LMLinearCombinationTermQuery.java	/^    public GeneralizedLMSimilarity() {       $/;"	m	class:GeneralizedLMSimilarity
+GeneralizedLMSimilarity	tsm/LMLinearCombinationTermQuery.java	/^class GeneralizedLMSimilarity extends LMJelinekMercerSimilarity {$/;"	c
+LMLinearCombinationTermQuery	tsm/LMLinearCombinationTermQuery.java	/^    public LMLinearCombinationTermQuery(Term term, PayloadFunction function, \/*float lambda,*\/ float mu, WordVecSearcher parent) {$/;"	m	class:LMLinearCombinationTermQuery
+LMLinearCombinationTermQuery	tsm/LMLinearCombinationTermQuery.java	/^public class LMLinearCombinationTermQuery extends PayloadTermQuery {$/;"	c
+LMLinearCombinationTermSpanScorer	tsm/LMLinearCombinationTermQuery.java	/^            public LMLinearCombinationTermSpanScorer(TermSpans spans, Weight weight, Similarity.SimScorer docScorer,$/;"	m	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight.LMLinearCombinationTermSpanScorer
+LMLinearCombinationTermSpanScorer	tsm/LMLinearCombinationTermQuery.java	/^        protected class LMLinearCombinationTermSpanScorer extends PayloadTermQuery.PayloadTermWeight.PayloadTermSpanScorer {$/;"	c	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight
+LMLinearCombinationTermWeight	tsm/LMLinearCombinationTermQuery.java	/^        public LMLinearCombinationTermWeight(LMLinearCombinationTermQuery query, IndexSearcher searcher,$/;"	m	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight
+LMLinearCombinationTermWeight	tsm/LMLinearCombinationTermQuery.java	/^    protected class LMLinearCombinationTermWeight extends PayloadTermQuery.PayloadTermWeight {$/;"	c	class:LMLinearCombinationTermQuery
+LMLinearCombinationTermWeight	tsm/WordVecTermQuery.java	/^        public LMLinearCombinationTermWeight(WordVecTermQuery query, IndexSearcher searcher)$/;"	m	class:WordVecTermQuery.LMLinearCombinationTermWeight
+LMLinearCombinationTermWeight	tsm/WordVecTermQuery.java	/^    protected class LMLinearCombinationTermWeight extends PayloadTermQuery.PayloadTermWeight {$/;"	c	class:WordVecTermQuery
+NumericTokenFilter	tsm/NumericTokenFilter.java	/^    public NumericTokenFilter(Version version, boolean enablePositionIncrements, TokenStream input) {$/;"	m	class:NumericTokenFilter
+NumericTokenFilter	tsm/NumericTokenFilter.java	/^public class NumericTokenFilter extends FilteringTokenFilter {$/;"	c
+PAYLOAD_DELIM	tsm/WordVecIndexer.java	/^    static final char PAYLOAD_DELIM = '|';$/;"	f	class:WordVecIndexer
+PayloadAnalyzer	tsm/WordVecIndexer.java	/^    public PayloadAnalyzer() {$/;"	m	class:PayloadAnalyzer
+PayloadAnalyzer	tsm/WordVecIndexer.java	/^class PayloadAnalyzer extends Analyzer {$/;"	c
+TRECQuery	trec/TRECQuery.java	/^    TRECQuery(WordVecSearcher parent) { this.parent = parent; }$/;"	m	class:TRECQuery
+TRECQuery	trec/TRECQuery.java	/^public class TRECQuery {$/;"	c
+TRECQueryParser	trec/TRECQueryParser.java	/^    public TRECQueryParser(String fileName, WordVecSearcher parent) throws SAXException {$/;"	m	class:TRECQueryParser
+TRECQueryParser	trec/TRECQueryParser.java	/^public class TRECQueryParser extends DefaultHandler {$/;"	c
+TermFreq	tsm/WordVecIndexer.java	/^    public TermFreq(String term, float ntf) {$/;"	m	class:TermFreq
+TermFreq	tsm/WordVecIndexer.java	/^class TermFreq {$/;"	c
+TrecTopicsReader	trec/TrecTopicsReader.java	/^class TrecTopicsReader {$/;"	c
+WordVec	tsm/WordVec.java	/^    WordVec(String line) {$/;"	m	class:WordVec
+WordVec	tsm/WordVec.java	/^    WordVec(String word, float querySim) {$/;"	m	class:WordVec
+WordVec	tsm/WordVec.java	/^    WordVec(String word, float[] vec) {$/;"	m	class:WordVec
+WordVec	tsm/WordVec.java	/^public class WordVec implements Comparable<WordVec> {$/;"	c
+WordVecIndexer	tsm/WordVecIndexer.java	/^    public WordVecIndexer(String propFile) throws Exception {$/;"	m	class:WordVecIndexer
+WordVecIndexer	tsm/WordVecIndexer.java	/^public class WordVecIndexer {$/;"	c
+WordVecSearcher	tsm/WordVecSearcher.java	/^    public WordVecSearcher(String ipropFile, String rpropFile) throws Exception {$/;"	m	class:WordVecSearcher
+WordVecSearcher	tsm/WordVecSearcher.java	/^public class WordVecSearcher {$/;"	c
+WordVecSimilarity	tsm/WordVecTermQuery.java	/^    public WordVecSimilarity(boolean usePayload) {       $/;"	m	class:WordVecSimilarity
+WordVecSimilarity	tsm/WordVecTermQuery.java	/^class WordVecSimilarity extends LMJelinekMercerSimilarity {$/;"	c
+WordVecTermQuery	tsm/WordVecTermQuery.java	/^    public WordVecTermQuery(Term term, PayloadFunction function) {$/;"	m	class:WordVecTermQuery
+WordVecTermQuery	tsm/WordVecTermQuery.java	/^public class WordVecTermQuery extends PayloadTermQuery {$/;"	c
+WordVecTermSpanScorer	tsm/WordVecTermQuery.java	/^            public WordVecTermSpanScorer(TermSpans spans, Weight weight, Similarity.SimScorer docScorer) throws IOException {$/;"	m	class:WordVecTermQuery.LMLinearCombinationTermWeight.WordVecTermSpanScorer
+WordVecTermSpanScorer	tsm/WordVecTermQuery.java	/^        protected class WordVecTermSpanScorer extends PayloadTermSpanScorer {$/;"	c	class:WordVecTermQuery.LMLinearCombinationTermWeight
+WordVecs	tsm/WordVecs.java	/^    public WordVecs(Properties prop) throws Exception { $/;"	m	class:WordVecs
+WordVecs	tsm/WordVecs.java	/^    public WordVecs(String propFile) throws Exception {$/;"	m	class:WordVecs
+WordVecs	tsm/WordVecs.java	/^public class WordVecs {$/;"	c
+accept	tsm/NumericTokenFilter.java	/^    protected boolean accept() throws IOException {$/;"	m	class:NumericTokenFilter
+alpha	tsm/WordVecSearcher.java	/^    float lambda, mu, alpha;   \/\/ mu < 1; lambda + alpha < 1$/;"	f	class:WordVecSearcher
+analyze	trec/TRECQuery.java	/^    String analyze(Analyzer analyzer, String queryField) throws Exception {$/;"	m	class:TRECQuery
+analyzer	tsm/WordVecIndexer.java	/^    Analyzer analyzer;$/;"	f	class:WordVecIndexer
+buff	trec/TRECQueryParser.java	/^    StringBuffer        buff;      \/\/ Accumulation buffer for storing the current topic$/;"	f	class:TRECQueryParser
+characters	trec/TRECQueryParser.java	/^    public void characters(char ch[], int start, int length) throws SAXException {$/;"	m	class:TRECQueryParser
+closeReader	tsm/WordVecSearcher.java	/^    public void closeReader() throws IOException {$/;"	m	class:WordVecSearcher
+compareTo	tsm/WordVec.java	/^    public int compareTo(WordVec that) {$/;"	m	class:WordVec
+computeAndStoreNNs	tsm/WordVecs.java	/^    public void computeAndStoreNNs() throws FileNotFoundException {$/;"	m	class:WordVecs
+constructDoc	tsm/WordVecIndexer.java	/^    Document constructDoc(String id, String content, String time) throws IOException {$/;"	m	class:WordVecIndexer
+constructQueries	tsm/WordVecSearcher.java	/^    List<TRECQuery> constructQueries() throws Exception {$/;"	m	class:WordVecSearcher
+cosineSim	tsm/WordVec.java	/^    float cosineSim(WordVec that) {$/;"	m	class:WordVec
+createComponents	tsm/WordVecIndexer.java	/^    protected Analyzer.TokenStreamComponents createComponents(String fieldName, Reader reader) {$/;"	m	class:PayloadAnalyzer
+createInstance	tsm/WordVecs.java	/^    static public WordVecs createInstance(Properties prop) throws Exception {$/;"	m	class:WordVecs
+createWeight	tsm/LMLinearCombinationTermQuery.java	/^    public Weight createWeight(IndexSearcher searcher) throws IOException {$/;"	m	class:LMLinearCombinationTermQuery
+createWeight	tsm/WordVecTermQuery.java	/^    public Weight createWeight(IndexSearcher searcher) throws IOException {$/;"	m	class:WordVecTermQuery
+decodeFromByteArray	tsm/WordVec.java	/^    static WordVec decodeFromByteArray(BytesRef bytes) throws Exception {$/;"	m	class:WordVec
+desc	trec/TRECQuery.java	/^    public String       desc;$/;"	f	class:TRECQuery
+docScorePredictionMap	tsm/WordVecSearcher.java	/^    HashMap<Integer, Float> docScorePredictionMap;$/;"	f	class:WordVecSearcher
+dumpIndex	tsm/WordVecIndexer.java	/^    void dumpIndex() {$/;"	m	class:WordVecIndexer
+encoder	tsm/WordVecIndexer.java	/^    private PayloadEncoder encoder;$/;"	f	class:PayloadAnalyzer	file:
+endElement	trec/TRECQueryParser.java	/^    public void endElement(String uri, String localName, String qName) throws SAXException {$/;"	m	class:TRECQueryParser
+expandDoc	tsm/WordVecIndexer.java	/^    Document expandDoc(IndexReader reader, int docId) throws IOException {$/;"	m	class:WordVecIndexer
+expandIndex	tsm/WordVecIndexer.java	/^    public void expandIndex() throws Exception {$/;"	m	class:WordVecIndexer
+fileName	trec/TRECQueryParser.java	/^    String              fileName;$/;"	f	class:TRECQueryParser
+get	tsm/WordVecSearcher.java	/^    public Similarity get(String fieldName) {$/;"	m	class:CombinationSimilarity
+getAnalyzer	tsm/WordVecIndexer.java	/^    public Analyzer getAnalyzer() { return analyzer; }$/;"	m	class:WordVecIndexer
+getBOWQuery	trec/TRECQuery.java	/^    public Query getBOWQuery(Analyzer analyzer) throws Exception {$/;"	m	class:TRECQuery
+getBytes	tsm/WordVec.java	/^    byte[] getBytes() throws IOException {$/;"	m	class:WordVec
+getCollectionModel	tsm/LMLinearCombinationTermQuery.java	/^    public LMSimilarity.CollectionModel getCollectionModel() { return collectionModel; }$/;"	m	class:GeneralizedLMSimilarity
+getCollectionModel	tsm/WordVecTermQuery.java	/^	public CollectionModel getCollectionModel() { return collectionModel; }$/;"	m	class:WordVecSimilarity
+getNearestNeighbors	tsm/WordVecs.java	/^    public List<WordVec> getNearestNeighbors(String queryWord) {$/;"	m	class:WordVecs
+getNorm	tsm/WordVec.java	/^    float getNorm() {$/;"	m	class:WordVec
+getPrecomputedNNs	tsm/WordVecs.java	/^    public List<WordVec> getPrecomputedNNs(String queryWord) {$/;"	m	class:WordVecs
+getSim	tsm/WordVecs.java	/^    public float getSim(String u, String v) {$/;"	m	class:WordVecs
+getVec	tsm/WordVecs.java	/^    public WordVec getVec(String word) {$/;"	m	class:WordVecs
+getWVQuery	trec/TRECQuery.java	/^    public Query getWVQuery(float lambda, float mu, float alpha, Analyzer analyzer) throws Exception {$/;"	m	class:TRECQuery
+id	trec/TRECQuery.java	/^    public String       id;$/;"	f	class:TRECQuery
+indexAll	tsm/WordVecIndexer.java	/^    void indexAll() throws Exception {$/;"	m	class:WordVecIndexer
+indexDir	tsm/WordVecIndexer.java	/^    File indexDir;$/;"	f	class:WordVecIndexer
+indexDirectory	tsm/WordVecIndexer.java	/^    private void indexDirectory(File dir) throws Exception {$/;"	m	class:WordVecIndexer	file:
+indexFile	tsm/WordVecIndexer.java	/^    void indexFile(File file) throws Exception {$/;"	m	class:WordVecIndexer
+indexReader	tsm/LMLinearCombinationTermQuery.java	/^            IndexReader indexReader;$/;"	f	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight.LMLinearCombinationTermSpanScorer
+indexingPass	tsm/WordVecIndexer.java	/^    int indexingPass;$/;"	f	class:WordVecIndexer
+iprop	tsm/WordVecSearcher.java	/^    Properties iprop; \/\/ init.properties$/;"	f	class:WordVecSearcher
+isLegalToken	tsm/WordVecs.java	/^    private boolean isLegalToken(String word) {$/;"	m	class:WordVecs	file:
+isSupervised	tsm/WordVecSearcher.java	/^    boolean isSupervised;$/;"	f	class:WordVecSearcher
+k	tsm/WordVecs.java	/^    int k;$/;"	f	class:WordVecs
+lambda	tsm/WordVecSearcher.java	/^    float lambda, mu, alpha;   \/\/ mu < 1; lambda + alpha < 1$/;"	f	class:WordVecSearcher
+lambda	tsm/WordVecSearcher.java	/^    float lambda;$/;"	f	class:CombinationSimilarity
+loadPrecomputedNNs	tsm/WordVecs.java	/^    public void loadPrecomputedNNs() throws FileNotFoundException, IOException {$/;"	m	class:WordVecs
+luceneQuery	trec/TRECQuery.java	/^    public Query        luceneQuery;$/;"	f	class:TRECQuery
+main	trec/TRECQueryParser.java	/^    public static void main(String[] args) {$/;"	m	class:TRECQueryParser
+main	tsm/WordVecIndexer.java	/^    public static void main(String[] args) {$/;"	m	class:WordVecIndexer
+main	tsm/WordVecSearcher.java	/^    public static void main(String[] args) {$/;"	m	class:WordVecSearcher
+main	tsm/WordVecs.java	/^    public static void main(String[] args) {$/;"	m	class:WordVecs
+mu	tsm/LMLinearCombinationTermQuery.java	/^    float mu;  \/\/ lambda for the payload$/;"	f	class:LMLinearCombinationTermQuery
+mu	tsm/WordVecSearcher.java	/^    float lambda, mu, alpha;   \/\/ mu < 1; lambda + alpha < 1$/;"	f	class:WordVecSearcher
+narr	trec/TRECQuery.java	/^    public String       narr;$/;"	f	class:TRECQuery
+nearestWordVecsMap	tsm/WordVecs.java	/^    HashMap<String, List<WordVec>> nearestWordVecsMap; \/\/ Store the pre-computed NNs after read from file$/;"	f	class:WordVecs
+norm	tsm/WordVec.java	/^    float norm;$/;"	f	class:WordVec
+ntf	tsm/WordVecIndexer.java	/^    float ntf;$/;"	f	class:TermFreq
+numWanted	tsm/WordVecSearcher.java	/^    int numWanted;      \/\/ number of result to be retrieved$/;"	f	class:WordVecSearcher
+oneMinusLambda	tsm/WordVecSearcher.java	/^    float oneMinusLambda;$/;"	f	class:CombinationSimilarity
+parent	trec/TRECQuery.java	/^    WordVecSearcher     parent;$/;"	f	class:TRECQuery
+parent	trec/TRECQueryParser.java	/^    WordVecSearcher     parent;$/;"	f	class:TRECQueryParser
+parent	tsm/LMLinearCombinationTermQuery.java	/^            WordVecSearcher parent;$/;"	f	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight.LMLinearCombinationTermSpanScorer
+parent	tsm/LMLinearCombinationTermQuery.java	/^        WordVecSearcher parent;$/;"	f	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight
+parent	tsm/LMLinearCombinationTermQuery.java	/^    WordVecSearcher parent;$/;"	f	class:LMLinearCombinationTermQuery
+parse	trec/TRECQueryParser.java	/^    public void parse() throws Exception {$/;"	m	class:TRECQueryParser
+prop	tsm/WordVecIndexer.java	/^    Properties prop;$/;"	f	class:WordVecIndexer
+prop	tsm/WordVecSearcher.java	/^    Properties prop;   \/\/ retrieve.properties$/;"	f	class:WordVecSearcher
+prop	tsm/WordVecSearcher.java	/^    Properties prop;$/;"	f	class:CombinationSimilarity
+prop	tsm/WordVecs.java	/^    Properties prop;$/;"	f	class:WordVecs
+queries	trec/TRECQueryParser.java	/^    public List<TRECQuery>  queries;$/;"	f	class:TRECQueryParser
+query	trec/TRECQueryParser.java	/^    TRECQuery           query;$/;"	f	class:TRECQueryParser
+querySim	tsm/WordVec.java	/^    float querySim; \/\/ distance from a reference query point$/;"	f	class:WordVec
+reader	tsm/WordVecSearcher.java	/^    IndexReader reader;$/;"	f	class:WordVecSearcher
+retrieveAll	tsm/WordVecSearcher.java	/^    public void retrieveAll() throws Exception {$/;"	m	class:WordVecSearcher
+runName	tsm/WordVecSearcher.java	/^    String runName;     \/\/ name of the run$/;"	f	class:WordVecSearcher
+score	tsm/LMLinearCombinationTermQuery.java	/^            public float score() throws IOException {$/;"	m	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight.LMLinearCombinationTermSpanScorer
+score	tsm/LMLinearCombinationTermQuery.java	/^    protected float score(BasicStats stats, float freq, float docLen) {$/;"	m	class:GeneralizedLMSimilarity
+score	tsm/WordVecTermQuery.java	/^            public float score() throws IOException {$/;"	m	class:WordVecTermQuery.LMLinearCombinationTermWeight.WordVecTermSpanScorer
+score	tsm/WordVecTermQuery.java	/^    protected float score(BasicStats stats, float freq, float docLen) {$/;"	m	class:WordVecSimilarity
+scorePayload	tsm/LMLinearCombinationTermQuery.java	/^    protected float scorePayload(int doc, int start, int end, BytesRef payload) {$/;"	m	class:GeneralizedLMSimilarity
+scorePayload	tsm/WordVecTermQuery.java	/^    protected float scorePayload(int doc, int start, int end, BytesRef payload) {        $/;"	m	class:WordVecSimilarity
+scorer	tsm/LMLinearCombinationTermQuery.java	/^        public Scorer scorer(AtomicReaderContext context, Bits acceptDocs) throws IOException {$/;"	m	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight
+scorer	tsm/WordVecTermQuery.java	/^        public Scorer scorer(AtomicReaderContext context, Bits acceptDocs) throws IOException {$/;"	m	class:WordVecTermQuery.LMLinearCombinationTermWeight
+searcher	tsm/WordVecSearcher.java	/^    IndexSearcher searcher;$/;"	f	class:WordVecSearcher
+singleTon	tsm/WordVecs.java	/^    static WordVecs singleTon;$/;"	f	class:WordVecs
+startElement	trec/TRECQueryParser.java	/^    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {$/;"	m	class:TRECQueryParser
+tags	trec/TRECQueryParser.java	/^    final static String[] tags = {"num", "title", "desc", "narr"};$/;"	f	class:TRECQueryParser
+term	tsm/LMLinearCombinationTermQuery.java	/^            Term term;$/;"	f	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight.LMLinearCombinationTermSpanScorer
+term	tsm/LMLinearCombinationTermQuery.java	/^        Term term;$/;"	f	class:LMLinearCombinationTermQuery.LMLinearCombinationTermWeight
+term	tsm/WordVecIndexer.java	/^    String term;$/;"	f	class:TermFreq
+termAtt	tsm/NumericTokenFilter.java	/^    private final CharTermAttribute termAtt = addAttribute(CharTermAttribute.class);$/;"	f	class:NumericTokenFilter	file:
+title	trec/TRECQuery.java	/^    public String       title;$/;"	f	class:TRECQuery
+toString	trec/TRECQuery.java	/^    public String toString() {$/;"	m	class:TRECQuery
+topDir	tsm/WordVecIndexer.java	/^    File topDir;$/;"	f	class:WordVecIndexer
+trec	trec/TRECQuery.java	/^package trec;$/;"	p
+trec	trec/TRECQueryParser.java	/^package trec;$/;"	p
+trec	trec/TrecTopicsReader.java	/^package trec;$/;"	p
+tsm	tsm/LMLinearCombinationTermQuery.java	/^package tsm;$/;"	p
+tsm	tsm/NumericTokenFilter.java	/^package tsm;$/;"	p
+tsm	tsm/WordVec.java	/^package tsm;$/;"	p
+tsm	tsm/WordVecIndexer.java	/^package tsm;$/;"	p
+tsm	tsm/WordVecSearcher.java	/^package tsm;$/;"	p
+tsm	tsm/WordVecTermQuery.java	/^package tsm;$/;"	p
+tsm	tsm/WordVecs.java	/^package tsm;$/;"	p
+usePayload	tsm/LMLinearCombinationTermQuery.java	/^    boolean usePayload;$/;"	f	class:GeneralizedLMSimilarity
+usePayload	tsm/WordVecTermQuery.java	/^    boolean usePayload;$/;"	f	class:WordVecSimilarity
+vec	tsm/WordVec.java	/^    float[] vec;$/;"	f	class:WordVec
+word	tsm/WordVec.java	/^    String word;$/;"	f	class:WordVec
+wordvecmap	tsm/WordVecs.java	/^    HashMap<String, WordVec> wordvecmap;$/;"	f	class:WordVecs
+wordvecs	tsm/WordVecIndexer.java	/^    WordVecs wordvecs;$/;"	f	class:WordVecIndexer
+wordvecs	tsm/WordVecSearcher.java	/^    WordVecs wordvecs;$/;"	f	class:WordVecSearcher
+writer	tsm/WordVecIndexer.java	/^    IndexWriter writer;$/;"	f	class:WordVecIndexer
+wvIndexDir	tsm/WordVecIndexer.java	/^    File wvIndexDir;$/;"	f	class:WordVecIndexer
+wvIndexer	tsm/WordVecSearcher.java	/^    WordVecIndexer wvIndexer;$/;"	f	class:WordVecSearcher
