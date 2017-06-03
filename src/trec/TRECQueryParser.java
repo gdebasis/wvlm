@@ -15,61 +15,47 @@ import javax.xml.parsers.*;
 import java.util.*;
 import javax.xml.transform.*;
 import org.apache.lucene.search.Query;
-import tsm.WordVecSearcher;
 
 public class TRECQueryParser extends DefaultHandler {
     StringBuffer        buff;      // Accumulation buffer for storing the current topic
     String              fileName;
     TRECQuery           query;
-    WordVecSearcher     parent;
     
     public List<TRECQuery>  queries;
-    final static String[] tags = {"num", "title", "desc", "narr"};
+    final static String[] tags = {"id", "title", "desc", "narr"};
 
-    public TRECQueryParser(String fileName, WordVecSearcher parent) throws SAXException {
+    public TRECQueryParser(String fileName) throws SAXException {
        this.fileName = fileName;
        buff = new StringBuffer();
        queries = new LinkedList<>();
-       this.parent = parent;
     }
 
     public void parse() throws Exception {
         SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
+        saxParserFactory.setValidating(false);
         SAXParser saxParser = saxParserFactory.newSAXParser();
-//        saxParserFactory.setValidating(false);
-//        SAXParser saxParser = saxParserFactory.newSAXParser();
-//        saxParser.parse(fileName, this);
         saxParser.parse(fileName, this);
     }
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if (qName.equalsIgnoreCase("top"))
-            query = new TRECQuery(this.parent);
+        if (qName.equalsIgnoreCase("query"))
+            query = new TRECQuery();
+        else
+            buff = new StringBuffer();
     }
     
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
-        //System.out.println(buff);
-        if (qName.equalsIgnoreCase("title")) {
-            query.title = buff.toString().trim();
-            buff.setLength(0);
-        }
-        else if (qName.equalsIgnoreCase("desc")) {
-            query.desc = buff.toString().trim();
-            buff.setLength(0);
-        }
-        else if (qName.equalsIgnoreCase("num")) {
-            query.id = buff.toString().trim();
-            buff.setLength(0);
-        }
-        else if (qName.equalsIgnoreCase("narr")) {
-            query.narr = buff.toString().trim();
-            buff.setLength(0);
-        }
-        else if (qName.equalsIgnoreCase("top")) {
-            queries.add(query);
-        }        
+
+        if (qName.equalsIgnoreCase("title"))
+            query.title = buff.toString();
+        else if (qName.equalsIgnoreCase("desc"))
+            query.desc = buff.toString();
+        else if (qName.equalsIgnoreCase("narr"))
+            query.narr = buff.toString();
+        else if (qName.equalsIgnoreCase("id"))
+            query.id = buff.toString();        
     }
 
     @Override
@@ -79,18 +65,15 @@ public class TRECQueryParser extends DefaultHandler {
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            args = new String[1];
             System.err.println("usage: java TRECQuery <input xml file>");
-            args[0] = "/mnt/sdb2/research/wvlm/tweet/topics.microblog2011.xml";
+            return;
         }
 
         try {
-            TRECQueryParser parser = new TRECQueryParser(args[0], null);
+            TRECQueryParser parser = new TRECQueryParser(args[0]);
             parser.parse();
-
-            for (TRECQuery query : parser.queries) {
-                System.out.println("ID: "+query.id);
-                System.out.println("Title: "+query.title);
+            for (TRECQuery q : parser.queries) {
+                System.out.println(q);
             }
         }
         catch (Exception ex) {

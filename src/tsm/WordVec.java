@@ -33,11 +33,6 @@ public class WordVec implements Comparable<WordVec> {
         this.vec = vec;
     }
     
-    WordVec(String word, float querySim) {
-        this.word = word;
-        this.querySim = querySim;
-    }
-    
     WordVec(String line) {
         String[] tokens = line.split("\\s+");
         word = tokens[0];
@@ -62,9 +57,6 @@ public class WordVec implements Comparable<WordVec> {
     float cosineSim(WordVec that) {
         float sum = 0;
         for (int i = 0; i < this.vec.length; i++) {
-            if (that == null) {
-                return 0;
-            }
             sum += vec[i] * that.vec[i];
         }
         return sum / (this.norm*that.norm);
